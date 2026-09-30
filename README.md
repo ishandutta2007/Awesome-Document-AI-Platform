@@ -1,243 +1,143 @@
-# Awesome-Document-AI-Platform
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Document AI Platform Banner" width="100%"/>
+</p>
 
-## Top Document AI Platform Ecosystem
+# 📄 Awesome Document AI Platform 🤖
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Document-AI-Platform?style=flat-square&color=blue" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Document-AI-Platform?style=flat-square&color=green" alt="License"/>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🚀 Top Document AI & Intelligent Document Processing Ecosystem
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+**Curated Directory of Enterprise SaaS Products, Vision-Language Models (VLM) & Open-Source GitHub Repositories**
 
-*Focused on Intelligent Document Processing, OCR & Structured Data Extraction*
+*Focused on Intelligent Document Processing (IDP), Optical Character Recognition (OCR), Layout Parsing & Schema-Constrained Data Extraction*
 
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Document AI**. These tools extract, classify, and structure data from documents such as invoices, receipts, contracts, and forms — enabling automation for finance, legal, healthcare, and enterprise operations.
-
-
-
-**Examples** include Hyperscience, Rossum, Nanonets, ABBYY, Google Document AI, Azure AI Document Intelligence, Amazon Textract, Veryfi, Klippa, and Docsumo (the category leaders).
-
-
-
-**Open-source emphasis**: This section is expanded with active projects for self-hosting, custom extraction schemas, and transparent document processing — ideal for developers, researchers, and enterprises building vendor-independent document intelligence pipelines. The open-source ecosystem in 2026 is anchored by **Docling** (IBM Research), **lift** (Datalab), and **PaddleOCR-VL** (Baidu), with strong coverage in vision-language models, schema-constrained extraction, and layout-aware parsing.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Hyperscience](https://www.hyperscience.com/)**  
-
-  Enterprise intelligent document processing platform with human-in-the-loop automation for complex document workflows.
-
-
-
-- **[Rossum](https://rossum.ai/)**  
-
-  AI-powered document automation platform specializing in invoice and purchase order processing with a focus on transactional documents.
-
-
-
-- **[Nanonets](https://nanonets.com/)**  
-
-  No-code AI document processing platform for extracting data from invoices, receipts, and forms with pre-built and custom models.
-
-
-
-- **[ABBYY](https://www.abbyy.com/)**  
-
-  Comprehensive document AI and process intelligence platform with OCR, IDP, and content intelligence capabilities.
-
-
-
-- **[Google Document AI](https://cloud.google.com/document-ai)**  
-
-  Cloud-based document understanding platform with pre-trained models for invoices, receipts, forms, and custom extraction.
-
-
-
-- **[Azure AI Document Intelligence](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence)**  
-
-  Microsoft's document processing service with pre-built models and custom extraction for forms, invoices, and receipts.
-
-
-
-- **[Amazon Textract](https://aws.amazon.com/textract/)**  
-
-  AWS's document text and data extraction service using machine learning for forms, tables, and structured data.
-
-
-
-- **[Veryfi](https://www.veryfi.com/)**  
-
-  Real-time document extraction API for receipts, invoices, and financial documents with mobile SDKs.
-
-
-
-- **[Klippa](https://www.klippa.com/)**  
-
-  Document automation platform with OCR and data extraction for receipts, invoices, and identity documents.
-
-
-
-- **[Docsumo](https://www.docsumo.com/)**  
-
-  AI-powered document processing platform with focus on financial documents and automated data extraction.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Docling](https://github.com/docling-project/docling)**  
-
-  The leading open-source document processing framework from IBM Research, described by Thoughtworks Technology Radar as "an open-source, self-hostable alternative to proprietary cloud-managed services such as Azure Document Intelligence, Amazon Textract and Google Document AI" . Converts complex PDFs and scanned documents into structured JSON and Markdown using computer vision-based layout and semantic understanding . Strong for RAG pipelines with reading order preservation, table structure recognition, and visual grounding. MIT licensed, integrates with LangChain and LangGraph .
-
-
-
-- **[lift](https://huggingface.co/datalab-to/lift)**  
-
-  Structured extraction model from Datalab that pulls structured JSON from PDFs and images using schema-constrained decoding to guarantee valid, well-typed output . Pass any JSON schema and lift returns a matching JSON object, handling multi-page documents and values spanning pages. 9B parameter model achieves 90.2% field accuracy with 9.5s median latency — outperforming Gemini Flash 3.5 (91.3%) on speed and Azure Content Understanding (83.4%) on accuracy . Apache 2.0 code with modified OpenRAIL-M weights.
-
-
-
-- **[PaddleOCR-VL-1.6](https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6)**  
-
-  Baidu's compact document parsing model achieving **96.33% on OmniDocBench v1.6** — state-of-the-art among open-source solutions . 1B parameter model with region-aware optimization for weak areas, progressive post-training with RL, and significant improvements in table recognition, Chinese ancient documents, rare characters, and seal/stamp recognition . Fully compatible with v1.5 for zero-cost migration. Apache 2.0 licensed.
-
-
-
-- **[Qianfan-OCR](https://huggingface.co/rootlocalghost/Qianfan-OCR)**  
-
-  Baidu Qianfan Team's 4B-parameter end-to-end document intelligence model that unifies document parsing, layout analysis, and document understanding . **#1 end-to-end model on OmniDocBench v1.5** (93.12 overall), surpassing DeepSeek-OCR-v2 (91.09) and Gemini-3 Pro (90.33). Includes innovative "Layout-as-Thought" phase for structured layout recovery via ⟨think⟩ tokens. 192 languages supported. Achieves 1.024 pages/second with W8A8 quantization on single A100 .
-
-
-
-- **[NuExtract3](https://huggingface.co/numind/NuExtract3)**  
-
-  NuMind's structured extraction model supporting in-context examples for ambiguous schemas . Features template generation from natural language descriptions and reasoning mode for harder extraction tasks. Supports Markdown OCR mode. 81.5% field accuracy in benchmarks, with 8.3s median latency (fastest local model tested) .
-
-
-
-- **[Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)**  
-
-  Alibaba's general-purpose vision-language model family (3B, 7B, 72B) with strong OCR capabilities . Not purpose-built for documents but excels at targeted field extraction when prompted — extract specific fields as JSON, tables as markdown, or describe structure in natural language. 7B model runs on consumer GPUs (~6GB VRAM); 72B competes with GPT-4o on document benchmarks. Apache 2.0 licensed .
-
-
-
-- **[olmOCR](https://github.com/allenai/olmocr)**  
-
-  Allen AI's industrial-scale PDF digitization tool achieving **82.4% on olmOCR-bench** . The headline number: converts **one million PDF pages for ~$190** using optimized SGLang inference — roughly 1/32nd the cost of GPT-4o . 7B model requires NVIDIA GPU with 16GB+ VRAM. Supports automatic page rendering, rotation correction, and retry logic for heterogeneous documents.
-
-
-
-- **[TinyDoc-VLM](https://pypi.org/project/tinydoc-vlm/)**  
-
-  256M-parameter document-specialist VLM that runs on **CPU, Raspberry Pi 5, or MacBook Air** with <1GB VRAM . SigLIP vision encoder + SmolLM2 decoder architecture. Handles invoices, receipts, forms, tables, and charts. Apache 2.0 licensed with ONNX export. LoRA fine-tuning with only 2.7M trainable params (0.93%) .
-
-
-
-- **[Kreuzberg (xberg)](https://pkg.go.dev/github.com/kreuzberg-dev/kreuzberg)**  
-
-  Document extraction engine supporting **101 formats across 115 file extensions** . Features intelligent format detection, OCR for images, MCP server for AI agent integration (9 tools, 3 prompts, 4 resources), and REST API server. CLI with 12 commands including extract, batch, detect, and serve. Docker deployment available .
-
-
-
-- **[AlienTables](https://pypi.org/project/AlienTables/)**  
-
-  Local, privacy-first PDF-to-Excel extraction engine with adaptive OCR fallback (pytesseract + pdf2image) . Built for batch processing thousands of same-template PDFs (invoices, purchase orders, shipping manifests). Generates per-file Excel output with detailed audit CSVs (audit.csv, orphan_pages.csv, review.csv) . Fully local — no cloud upload.
-
-
-
-- **[DocTR](https://github.com/mindee/doctr)**  
-
-  OCR library supporting PyTorch and TensorFlow with **structured JSON output** (blocks, lines, words, bounding boxes) . Ideal when OCR is the first step in a larger document automation pipeline — richer output reduces downstream parsing complexity. Requires more setup than basic OCR but enables table reconstruction, field detection, and region-based grouping .
-
-
-
-- **[Receipt Wrangler](https://github.com/Receipt-Wrangler/receipt-wrangler)**  
-
-  Self-hosted receipt tracking with OCR (Tesseract offline) and optional AI provider integration (OpenAI, Gemini, Ollama) . Extracts merchant, date, total, and line items; categorizes, tags, and splits receipts across groups. Web app + iOS/Android apps. AGPL-3.0 licensed with one-click Railway deployment .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Tesseract OCR** — The foundational open-source OCR engine, still widely used for basic text extraction .
-
-- **EasyOCR** — Popular Python OCR library supporting 80+ languages with simple API .
-
-- **Surya** — Document OCR, layout, and tables via a 0.7B parameter model with modified license .
-
-- **MonkeyOCRv2** — 0.8B parsing model with smaller and larger variants .
-
-- **MinerU2.5** — OpenDataLab's 1.2B structured JSON/Markdown extraction pipeline .
-
-- **VerifyDoc** — Trust layer for AI document extraction adding per-field confidence, source grounding, and accept/review abstention .
-
-
-
-**Frameworks for building custom Document AI pipelines**: Combine **Docling** for layout-aware parsing and RAG-ready output, **lift** or **NuExtract3** for schema-constrained structured extraction, and **PaddleOCR-VL-1.6** or **Qianfan-OCR** for state-of-the-art parsing accuracy . Use **TinyDoc-VLM** for CPU-only or edge deployments . Integrate **VerifyDoc** as a trust layer to add per-field confidence and abstention to any extractor . For high-volume digitization, **olmOCR** delivers industrial-scale cost efficiency ($190/million pages) with GPU infrastructure . Note that true enterprise Document AI platforms with managed scaling, pre-built industry models, and compliance certifications remain primarily commercial territory; open-source stacks provide strong parsing, extraction, and validation foundations that require integration for complete document automation.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Document AI tools process sensitive business and personal data. Self-hosted solutions require proper security hardening, encryption at rest and in transit, and compliance with data privacy regulations (GDPR, CCPA, HIPAA).
-
-- Model accuracy varies by document type, language, and quality. Benchmark results should not be interpreted as guarantees of production performance on your specific documents.
-
-- The open-source ecosystem provides strong parsing, extraction, and validation foundations, but enterprise-grade managed scaling, industry-specific pre-trained models, and compliance certifications remain primarily commercial offerings.
-
-
+📅 **Last updated: September 2026**
 
 ---
 
+## 🔍 Overview & Market Landscape
 
+This repository tracks notable **SaaS platforms** and **open-source GitHub repositories** for **Document AI**. These solutions extract, classify, parse layout, and structure data from complex documents such as invoices, receipts, bills of lading, contracts, identity cards, and financial forms — powering end-to-end intelligent document processing (IDP) automation for finance, legal, healthcare, supply chain, and enterprise operations.
 
-**Made for document processing engineers, automation architects, finance operations teams, and AI developers.**
+### 🌐 SaaS Document AI Market Overview
+> 📊 **Market Size & Structure**: The global Intelligent Document Processing (IDP) / Document AI market was valued at **~$3.14 Billion in 2024** and is projected to expand rapidly to **~$15.57 Billion by 2032** (CAGR ~22.1%). The sector is **moderately fragmented**: hyper-scaler cloud vendors (*Microsoft Azure, Google Cloud, AWS*) dominate infrastructure and base OCR APIs, while specialized enterprise platforms (*Hyperscience, ABBYY, Rossum, Nanonets*) compete heavily on workflow automation, domain-specific extractors, human-in-the-loop (HITL) verification, and ERP integrations. It is **not a strict "winner-take-all" market**, as enterprise buyers frequently adopt multi-vendor solutions tailored to regulatory compliance, self-hosting needs, and document complexity.
 
-Let's make Document AI more open, transparent, and accessible.
+---
+
+## 📚 Table of Contents
+
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Architecture & Integration Guide](#%EF%B8%8F-architecture--integration-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+| Company / Platform | Description | Starting Price 💰 | Free Tier Limit 🎁 | Company Size (Valuation / Revenue) 🏢 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Azure AI Document Intelligence](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence)** | Microsoft's document processing service with pre-built models and custom extraction for forms, invoices, and receipts. | $1.50 / 1,000 pages (Standard Read API) | Free (F0) tier: 500 pages/month (max 4MB file size) | **$3.1 Trillion** market cap (Microsoft) |
+| **[Google Document AI](https://cloud.google.com/document-ai)** | Cloud-based document understanding platform with pre-trained models for invoices, receipts, forms, and custom extraction. | $1.50 / 1,000 pages (Standard OCR) | $300 free trial credits for new GCP accounts | **$2.0 Trillion** market cap (Alphabet) |
+| **[Amazon Textract](https://aws.amazon.com/textract/)** | AWS's document text and data extraction service using machine learning for forms, tables, and structured data. | $1.50 / 1,000 pages (Detect Text API) | 1,000 pages/month for 3 months (Free Trial) | **$1.9 Trillion** market cap (Amazon) |
+| **[Hyperscience](https://www.hyperscience.com/)** | Enterprise intelligent document processing platform with human-in-the-loop automation for complex document workflows. | $100,000+/year enterprise license | 14-day enterprise trial upon demo request | **$1.6 Billion** valuation |
+| **[ABBYY](https://www.abbyy.com/)** | Comprehensive document AI and process intelligence platform with OCR, IDP, and content intelligence capabilities. | $16.50/month (FineReader PDF Standard) | 7-day free trial for desktop software | **$1.0 Billion+** valuation / ~$300M ARR |
+| **[Rossum](https://rossum.ai/)** | AI-powered document automation platform specializing in invoice and purchase order processing with a focus on transactional documents. | $18,000/year (Starter Plan) | 14-day free trial (up to 300 docs/month limit) | **$500 Million** valuation / $45M ARR |
+| **[Klippa](https://www.klippa.com/)** | Document automation platform with OCR and data extraction for receipts, invoices, and identity documents. | €5.00/user/month (SpendControl) | 14-day free trial / Free basic tier available | **$214.9 Million** valuation / $21.5M ARR |
+| **[Nanonets](https://nanonets.com/)** | No-code AI document processing platform for extracting data from invoices, receipts, and forms with pre-built and custom models. | Pay-as-you-go ($0.02 - $0.30 per run) | $50 free trial credits (no credit card required) | **$116 Million** valuation / $100M ARR |
+| **[Docsumo](https://www.docsumo.com/)** | AI-powered document processing platform with focus on financial documents and automated data extraction. | $500/month (Business Plan) | 1,000 free pages trial limit | **$107.7 Million** valuation / $10.3M ARR |
+| **[Veryfi](https://www.veryfi.com/)** | Real-time document extraction API for receipts, invoices, and financial documents with mobile SDKs. | $19.99/user/month (SaaS) or $500/month minimum (API) | 100 documents/month free (OCR API) / 10 scans/month free (SaaS) | **$50 Million+** valuation / ~$12.8M total funding |
+
+---
+
+## ⚡ Open-Source GitHub Projects
+
+The open-source ecosystem in 2026 offers transparent, self-hostable parsing engines, schema-constrained extractors, and vision-language models (VLMs) tailored for document intelligence. 
+
+*Repositories below are sorted by GitHub Star Count (descending).*
+
+| Project / Repository 📦 | GitHub Stars ⭐ (Stargazers Link) | License 📄 | Description & Key Capabilities 💡 |
+| :--- | :--- | :--- | :--- |
+| **[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)** | [![GitHub stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?style=social&color=white)](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | Apache 2.0 | Baidu's flagship ultra-lightweight OCR and document understanding toolkit supporting 80+ languages, table recognition, and LayoutLM. Includes **PaddleOCR-VL-1.6** (96.33% on OmniDocBench v1.6). |
+| **[MinerU](https://github.com/opendatalab/MinerU)** | [![GitHub stars](https://img.shields.io/github/stars/opendatalab/MinerU?style=social&color=white)](https://github.com/opendatalab/MinerU/stargazers) | AGPL 3.0 | OpenDataLab's 1.2B structured extraction pipeline converting complex PDFs, formulas, tables, and scientific papers into clean Markdown and JSON. |
+| **[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)** | [![GitHub stars](https://img.shields.io/github/stars/tesseract-ocr/tesseract?style=social&color=white)](https://github.com/tesseract-ocr/tesseract/stargazers) | Apache 2.0 | The foundational open-source LSTM OCR engine supporting 100+ languages and line-level text recognition. |
+| **[Docling](https://github.com/docling-project/docling)** | [![GitHub stars](https://img.shields.io/github/stars/docling-project/docling?style=social&color=white)](https://github.com/docling-project/docling/stargazers) | MIT | IBM Research's document processing framework. Converts complex PDFs/scans to structured JSON/Markdown with reading order preservation, table recognition, and visual grounding for RAG pipelines. |
+| **[Surya](https://github.com/VikParuchuri/surya)** | [![GitHub stars](https://img.shields.io/github/stars/VikParuchuri/surya?style=social&color=white)](https://github.com/VikParuchuri/surya/stargazers) | GPL 3.0 | Multilingual OCR, document layout analysis, and reading order detection model supporting 90+ languages with benchmark-leading accuracy. |
+| **[EasyOCR](https://github.com/JaidedAI/EasyOCR)** | [![GitHub stars](https://img.shields.io/github/stars/JaidedAI/EasyOCR?style=social&color=white)](https://github.com/JaidedAI/EasyOCR/stargazers) | Apache 2.0 | Ready-to-use Python OCR package supporting 80+ languages and popular frameworks (PyTorch). |
+| **[olmOCR](https://github.com/allenai/olmocr)** | [![GitHub stars](https://img.shields.io/github/stars/allenai/olmocr?style=social&color=white)](https://github.com/allenai/olmocr/stargazers) | Apache 2.0 | Allen AI's industrial-scale PDF digitization tool achieving 82.4% on olmOCR-bench. Converts 1 million PDF pages for ~$190 using SGLang GPU inference. |
+| **[DocTR](https://github.com/mindee/doctr)** | [![GitHub stars](https://img.shields.io/github/stars/mindee/doctr?style=social&color=white)](https://github.com/mindee/doctr/stargazers) | Apache 2.0 | Mindee's seamless OCR library powered by PyTorch and TensorFlow with structured JSON output (blocks, lines, words, bounding boxes). |
+| **[lift](https://huggingface.co/datalab-to/lift)** | [![HuggingFace stars](https://img.shields.io/badge/HuggingFace-lift-orange?style=social&color=white)](https://huggingface.co/datalab-to/lift) | Apache 2.0 | Datalab's 9B parameter schema-constrained structured extraction model pulling JSON from PDFs with 90.2% field accuracy and 9.5s median latency. |
+| **[Qianfan-OCR](https://huggingface.co/rootlocalghost/Qianfan-OCR)** | [![HuggingFace stars](https://img.shields.io/badge/HuggingFace-Qianfan--OCR-orange?style=social&color=white)](https://huggingface.co/rootlocalghost/Qianfan-OCR) | Open Model | Baidu Qianfan's 4B-parameter end-to-end model (#1 on OmniDocBench v1.5 with 93.12 score) with "Layout-as-Thought" reasoning for 192 languages. |
+| **[NuExtract3](https://huggingface.co/numind/NuExtract3)** | [![HuggingFace stars](https://img.shields.io/badge/HuggingFace-NuExtract3-orange?style=social&color=white)](https://huggingface.co/numind/NuExtract3) | Apache 2.0 | NuMind's structured extraction model supporting in-context learning, prompt templates, and Markdown OCR mode with 8.3s latency. |
+| **[Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)** | [![HuggingFace stars](https://img.shields.io/badge/HuggingFace-Qwen2.5--VL-orange?style=social&color=white)](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) | Apache 2.0 | Alibaba's vision-language model family (3B, 7B, 72B) for zero-shot structured extraction, visual grounding, and document Q&A. |
+| **[TinyDoc-VLM](https://pypi.org/project/tinydoc-vlm/)** | [![PyPI version](https://img.shields.io/badge/PyPI-tinydoc--vlm-blue?style=social&color=white)](https://pypi.org/project/tinydoc-vlm/) | Apache 2.0 | 256M-parameter document specialist VLM running on CPU, Raspberry Pi 5, or edge devices (<1GB VRAM) using SigLIP + SmolLM2 architecture. |
+| **[Kreuzberg (xberg)](https://github.com/kreuzberg-dev/kreuzberg)** | [![GitHub stars](https://img.shields.io/github/stars/kreuzberg-dev/kreuzberg?style=social&color=white)](https://github.com/kreuzberg-dev/kreuzberg/stargazers) | MIT | High-performance document extraction engine supporting 101 formats, MCP server for AI agents, CLI, and REST API. |
+| **[Receipt Wrangler](https://github.com/Receipt-Wrangler/receipt-wrangler)** | [![GitHub stars](https://img.shields.io/github/stars/Receipt-Wrangler/receipt-wrangler?style=social&color=white)](https://github.com/Receipt-Wrangler/receipt-wrangler/stargazers) | AGPL 3.0 | Self-hosted receipt management and tracking system with offline Tesseract OCR and LLM integration options. |
+| **[AlienTables](https://pypi.org/project/AlienTables/)** | [![PyPI version](https://img.shields.io/badge/PyPI-AlienTables-blue?style=social&color=white)](https://pypi.org/project/AlienTables/) | MIT | Privacy-first local PDF-to-Excel batch extraction engine with adaptive OCR fallback and audit CSV reporting. |
+
+---
+
+## 🛠️ Architecture & Integration Guide
+
+For engineers constructing custom **Document AI Pipelines**:
+* **Layout Parsing & RAG**: Use **Docling** or **MinerU** for converting unstructured PDFs into clean, semantically ordered Markdown/JSON chunkable for vector databases.
+* **Schema-Constrained Extraction**: Use **lift** or **NuExtract3** when you require strict JSON outputs adhering strictly to Pydantic / JSON schemas.
+* **Edge & Mobile Deployments**: Use **TinyDoc-VLM** or **EasyOCR** for on-device, offline processing with low VRAM footprint.
+* **High-Volume Mass Digitization**: Deploy **olmOCR** with SGLang batching for maximum throughput and cost efficiency ($190/million pages).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Please follow these simple steps to add new Document AI tools or update existing entries:
+
+1. **Fork** the repository.
+2. Update [`README.md`](file:///C:/Users/hp/Documents/Projects/Awesome-Document-AI-Platform/README.md) following the table or list format.
+3. Ensure entries include: tool name, direct link, concise description, starting price / star count, and license.
+4. Submit a **Pull Request (PR)** with a clear title.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated Document AI ecosystem resource helpful, please consider supporting the maintenance of this list!
+
+* ⭐ **Star** this repository to show your appreciation!
+* 🔀 **Fork** and share it with fellow document processing engineers & AI researchers.
+* ☕ **Buy me a coffee / Sponsor**: Support ongoing updates via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20Me-%E2%9D%A4-red?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub"/>
+  </a>
+</p>
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Document-AI-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Document-AI-Platform&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This directory is a **community-curated list** — provided for informational and educational purposes without endorsement.
+- Document AI tools process sensitive financial, legal, and identity data. Self-hosted deployments require end-to-end encryption, access controls, and compliance with data privacy regulations (GDPR, CCPA, HIPAA).
+- Model benchmark scores (e.g., OmniDocBench, olmOCR-bench) vary depending on dataset domain, document noise, and image quality.
+
+---
+
+<p align="center">
+  <i>Maintained with ❤️ for document processing engineers, AI researchers, and automation architects worldwide.</i>
+</p>
