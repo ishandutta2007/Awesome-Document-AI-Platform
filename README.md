@@ -57,6 +57,7 @@ This repository tracks notable **SaaS platforms** and **open-source GitHub repos
 | **[Nanonets](https://nanonets.com/)** | No-code AI document processing platform for extracting data from invoices, receipts, and forms with pre-built and custom models. | Pay-as-you-go ($0.02 - $0.30 per run) | $50 free trial credits (no credit card required) | **$116 Million** valuation / $100M ARR |
 | **[Docsumo](https://www.docsumo.com/)** | AI-powered document processing platform with focus on financial documents and automated data extraction. | $500/month (Business Plan) | 1,000 free pages trial limit | **$107.7 Million** valuation / $10.3M ARR |
 | **[Veryfi](https://www.veryfi.com/)** | Real-time document extraction API for receipts, invoices, and financial documents with mobile SDKs. | $19.99/user/month (SaaS) or $500/month minimum (API) | 100 documents/month free (OCR API) / 10 scans/month free (SaaS) | **$50 Million+** valuation / ~$12.8M total funding |
+| **[Cogneris](https://cogneris.ai/)** | Document AI extraction API that classifies, parses and extracts PDFs, payslips, statements, invoices and contracts into validated JSON, with fraud checks, verification workflows and a customer portal; REST, webhooks and Python/Node/Java/.NET SDKs. | €99/month (Pro, ~5,000 credits ≈ 1,190 documents) or €0.02/credit post-paid | 14-day trial with 400 credits (≈ 95 documents), no credit card | Private / bootstrapped |
 
 ---
 
